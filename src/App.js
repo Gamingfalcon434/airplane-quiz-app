@@ -1,3 +1,7 @@
+return (
+  <motion.div className="min-h-screen bg-gray-50 p-4">
+    <div className="max-w-2xl mx-auto">
+      <h1 className="text-3xl font-bold text-center mb-6">US Fighter Jet Quiz</h1>
 import React, { useState, useEffect } from 'react';
 import { Card, CardContent } from "./components/ui/card";
 import { Button } from "./components/ui/button";
@@ -802,3 +806,6 @@ function USFighterJetQuiz() {
 }
 
 export default USFighterJetQuiz;
+    </div>
+  </motion.div>
+);
