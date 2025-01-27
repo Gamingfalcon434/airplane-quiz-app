@@ -12,7 +12,7 @@ import { BarChart2 } from "lucide-react";
 // Only 5 will be used per session.
 
 const ALL_QUESTIONS = [
-  // ... (your questions array as provided)
+  // ... (Your complete questions array as provided)
 ];
 
 function getQuestionsForDifficulty(difficulty) {
