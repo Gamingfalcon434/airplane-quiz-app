@@ -1,9 +1,32 @@
-export const Card = ({ children, className }) => (
-  <div className={`bg-white rounded-lg shadow-lg p-6 ${className || ""}`}>
-    {children}
-  </div>
-);
+import React from 'react';
 
-export const CardContent = ({ children }) => (
-  <div className="p-4">{children}</div>
-);
+/**
+ * Card Component
+ * @param {object} props
+ * @param {React.ReactNode} props.children - The content inside the card
+ * @param {string} [props.className] - Additional CSS classes
+ * @returns JSX.Element
+ */
+function Card({ children, className }) {
+  return (
+    <div className={`bg-white rounded-lg shadow-lg p-6 ${className || ""}`}>
+      {children}
+    </div>
+  );
+}
+
+/**
+ * CardContent Component
+ * @param {object} props
+ * @param {React.ReactNode} props.children - The content inside the card content
+ * @returns JSX.Element
+ */
+function CardContent({ children }) {
+  return (
+    <div className="card-content">
+      {children}
+    </div>
+  );
+}
+
+export { Card, CardContent };
