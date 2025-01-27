@@ -158,7 +158,7 @@ function USFighterJetQuiz() {
       exit={{ opacity: 0 }}
       className="max-w-xl mx-auto p-4"
     >
-      <h1 className="text-4xl font-bold mb-4">US Fighter Jet Quiz</h1>
+      <h1 className="text-4xl font-bold mb-4 justify-center">US Fighter Jet Quiz</h1>
       <div className="flex flex-wrap gap-2 mb-4 justify-center">
         <Button variant={difficulty === "easy" ? "default" : "outline"} onClick={() => handleDifficultyChange("easy")}>Easy</Button>
         <Button variant={difficulty === "medium" ? "default" : "outline"} onClick={() => handleDifficultyChange("medium")}>Medium</Button>
@@ -213,7 +213,7 @@ function USFighterJetQuiz() {
                   {option}
                 </Button>
               ))}
-              <Button onClick={handleNext} className="mt-4">
+              <Button onClick={handleNext} className="mt-4 justify-right">
                 {currentQuestionIndex < questions.length - 1 ? "Next" : "Finish"}
               </Button>
             </CardContent>
