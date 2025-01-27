@@ -1,0 +1,24 @@
+{
+  "name": "airplane-quiz",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "tailwindcss": "^3.4.1",
+    "postcss": "^8.4.35",
+    "autoprefixer": "^10.4.18",
+    "@radix-ui/themes": "^3.0.0",
+    "@radix-ui/react-icons": "^1.3.0",
+    "framer-motion": "^10.16.0",
+    "lucide-react": "^0.294.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "vite": "^4.0.0"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  }
+}
