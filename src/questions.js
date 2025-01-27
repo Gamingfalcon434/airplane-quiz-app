@@ -1,4 +1,4 @@
-const ALL_QUESTIONS = [
+export const ALL_QUESTIONS = [
   // Easy questions (16 total + 4 new = 20)
   {
     difficulty: "easy",
