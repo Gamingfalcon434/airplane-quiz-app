@@ -5,15 +5,12 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { BarChart2 } from "lucide-react";
+import { ALL_QUESTIONS } from './questions'; 
 
 // Expanded question set with new "insane" and "missiles" difficulties.
 // We will randomize question order each time the user picks a difficulty.
 // Each difficulty has 20 questions for easy, medium, and hard (16 old + 4 new), and 16 for insane/missiles.
 // Only 5 will be used per session.
-
-const ALL_QUESTIONS = [
-  // ... (Your complete questions array as provided)
-];
 
 function getQuestionsForDifficulty(difficulty) {
   return ALL_QUESTIONS.filter((q) => q.difficulty === difficulty);
